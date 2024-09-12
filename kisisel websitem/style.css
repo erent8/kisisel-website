@@ -1,0 +1,97 @@
+/* Hakkımda Bölümü - Yazı Yazma Efekti */
+#about-text {
+    font-size: 1.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    width: 0;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+/* Projelerim Bölümü */
+#project-filters {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #3a3a3a;
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #565656;
+}
+
+#project-list li {
+    padding: 10px;
+    margin: 5px;
+    background-color: #f4f4f4;
+    border-left: 4px solid #3a3a3a;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+#project-list li:hover {
+    transform: scale(1.05);
+}
+
+/* İletişim Formu */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    padding: 10px;
+    background-color: #3a3a3a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #565656;
+}
+
+#form-message {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: green;
+}
+
+/* Genel Stiller */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark {
+    background-color: #1c1c1c;
+    color: #ddd;
+}

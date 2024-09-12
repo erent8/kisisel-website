@@ -1,0 +1,2 @@
+# kisisel-website
+hazırlık aşamasında
